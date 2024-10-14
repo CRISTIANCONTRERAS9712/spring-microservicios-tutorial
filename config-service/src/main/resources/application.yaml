@@ -1,0 +1,13 @@
+server:
+  port: 8081
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          default-label: config-server #branch
+          uri: https://github.com/CRISTIANCONTRERAS9712/spring-microservicios-tutorial
+          search-paths:
+          - config-data #Carpeta de repositorio
+  application:
+    name: config-service #Nombre del servicio@
